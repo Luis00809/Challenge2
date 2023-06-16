@@ -4,5 +4,31 @@
     box-sizing: border-box;
 }
 
+.header {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(145, 145, 237, 0.3);
+    flex-direction: row;
+    height: 90px;
+    align-items: center;
+}
 
+.header h1 {
+    font-size: 50px;
+    
 
+}
+
+.header div ul {
+    list-style: none;
+    display: flex;
+    width: 600px;
+    justify-content: space-evenly
+   
+}
+
+.header div ul li {
+    display: inline-block;
+    font-size: 25px;
+}
+    
