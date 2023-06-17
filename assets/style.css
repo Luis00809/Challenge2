@@ -4,6 +4,17 @@
     box-sizing: border-box;
 }
 
+img {
+    height: 500px;
+    width: 400px;
+    border-radius: 50%;
+    /* aspect-ratio: 1; */ 
+}
+
+body{
+    background-color: rgba(40, 175, 232, 0.548);
+}
+
 .header {
     display: flex;
     justify-content: space-around;
@@ -15,15 +26,13 @@
 
 .header h1 {
     font-size: 50px;
-    
-
 }
 
 .header div ul {
     list-style: none;
     display: flex;
     width: 600px;
-    justify-content: space-evenly
+    justify-content: space-evenly;
    
 }
 
@@ -31,4 +40,57 @@
     display: inline-block;
     font-size: 25px;
 }
+
+.container {
+    display: flex;
+    justify-content:flex-end;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding-top: 20px;
+}
+
+
+/* start of: targeting "about-me" div */
+.container div.about-me{
+    display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+}
+
+.container .about-me img,.flex-right-1 {
+    display: inline-block;
+}
+
+/* TODO: bring in img selector here instead of up top */
+
+.container .about-me p {
+    font-size: 30px;
+    width: 400px; 
+    height: 500px; 
+    padding-top: 100px;
+}
+/* end of: targeting "about-me: div */
+
+
+
+/* start of: "work" div */
+.container div.work{
+    display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+}
+
+.container .about-me .flex-left-2,.flex-right-2-stack {
+    display: inline-block;
+}
+
+.flex-right-2-stack {
+    background-color: red;
+    display: flex; 
+}
+
+.flex-right-2-stack figure.stack-1 {
+    background-color: blue;
     
+}
+
