@@ -128,3 +128,30 @@ div.flex-right-2-stack {
     border: 5px solid black;
     
 }
+/* end of: "work" div  */
+
+/* start of: "contact" div */
+.container .contact {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 80px;
+}
+
+.container .contact h3 {
+    font-size: 30px;
+}
+
+.container .contact ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 700px;
+
+}
+
+.container .contact ul li {
+    font-size: 30px;
+}
+
