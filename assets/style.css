@@ -17,6 +17,7 @@ body{
     flex-direction: row;
     height: 90px;
     align-items: center;
+    margin-bottom: 50px;
 }
 
 .header h1 {
@@ -45,6 +46,7 @@ body{
 }
 
 
+
 /* start of: targeting "about-me" div */
 .container div.about-me{
     display: flex;
@@ -53,11 +55,10 @@ body{
 }
 
 .container .about-me img {
-    height: 500px;
+    height: 400px;
     width: 400px;
     border-radius: 50%;
-    /* aspect-ratio: 1; */ 
-    /* turn into a circle */
+    aspect-ratio: 3/2;
 }
 
 .container .about-me img,.flex-right-1 {
@@ -133,12 +134,13 @@ div.flex-right-2-stack {
 /* start of: "contact" div */
 .container .contact {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     padding: 80px;
 }
 
-.container .contact h3 {
-    font-size: 30px;
+.container  h3 {
+    font-size: 25px;
+    padding-right: 90px;
 }
 
 .container .contact ul {
@@ -156,3 +158,9 @@ div.flex-right-2-stack {
 }
 
 /* end of: "contact" div */
+
+#line {
+    width: 1px;
+    height: 500px;
+    background-color: red;
+}
