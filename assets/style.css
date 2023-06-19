@@ -8,8 +8,7 @@ body{
     background-color: rgba(40, 175, 232, 0.548);
 }
 
-
-
+/* start of: heading section */
 .header {
     display: flex;
     justify-content: space-around;
@@ -36,131 +35,116 @@ body{
     display: inline-block;
     font-size: 25px;
 }
+/* end of: header section> */
 
+
+/* start of: container section */
 .container {
     display: flex;
-    justify-content:flex-end;
-    flex-wrap: wrap;
-    flex-direction: column;
-    padding-top: 20px;
-}
-
-
-
-/* start of: targeting "about-me" div */
-.container div.about-me{
-    display: flex;
-   flex-direction: row;
-   justify-content: space-evenly;
-}
-
-.container .about-me img {
-    height: 400px;
-    width: 400px;
-    border-radius: 50%;
-    aspect-ratio: 3/2;
-}
-
-.container .about-me img,.flex-right-1 {
-    display: inline-block;
-}
-
-/* TODO: bring in img selector here instead of up top */
-
-.container .about-me p {
-    font-size: 30px;
-    width: 400px; 
-    height: 500px; 
-    padding-top: 100px;
-}
-/* end of: targeting "about-me: div */
-
-
-
-/* start of: "work" div */
-.container div.work{
-    display: flex;
-   flex-direction: row;
-   justify-content: space-evenly;
-   align-items: center;
-   margin-top: 50px;
-}
-
-.container .about-me .flex-left-2,.flex-right-2-stack {
-    display: inline-block;
-}
-
-div.flex-right-2-stack {
-    display: flex; 
     flex-direction: row;
     flex-wrap: wrap;
-    width: 700px;
-    gap: 50px;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
 
 }
 
-/* .work .flex-right-2-stack .stack-1::after {
-    content: "";
-    width: 5550px;
-    background-color: blue;
-    width: 4px;
-    display: block */
-}
-
-.container .work .flex-right-2-stack .stack-1 {
-    background-color: white;
+.container .box {
+    /* background-color: red; */
     width: 500px;
-    display: flex;  
+    height: 600px;
+    margin: 20px;
+
+}
+/* end of: container section */
+
+/* start of: row1 */
+
+.container .box1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.container .work .flex-right-2-stack .stack-1 img{
-    width: 500px;
-    height: 300px;
-    border: 10px solid black;
-    display: block;
+.container .box1 img {
+    border-radius: 50%;
 }
 
-.container .work .flex-right-2-stack .stack-2,.stack-3 {
-    display: inline-block;   
-}
-
-.container .work .flex-right-2-stack .stack-2 img,.stack-3 img {
-    border: 5px solid black;
+.box2 {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    /* background-color: blue; */
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
     
 }
-/* end of: "work" div  */
 
-/* start of: "contact" div */
-.container .contact {
+.box2 p {
+    display: inline;
+    color: white;
+    line-height: 30px;
+}
+
+/* end of: row1 */
+
+/* start of: row 2 */
+.box3 {
     display: flex;
-    justify-content: space-around;
-    padding: 80px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 
-.container  h3 {
-    font-size: 25px;
-    padding-right: 90px;
+.box3 h2 {
+    color: white
+    
 }
 
-.container .contact ul {
+/* flex for 3 images stacked with one on top */
+
+.stack {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 60px;
+}
+
+#top {
+    width: 350px
+}
+
+.bottom {
+    width: 220px;
+}
+/* end of: row 2 */
+
+/* start of: row3 */
+/* values for h3 are above */
+
+.links {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    /* background-color: white; */
+    width: 100%;
+    height: 100%
+}
+
+.links ul {
     list-style: none;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 700px;
-
+    justify-content: space-evenly;
+    width: 100%
 }
 
-.container .contact ul li {
-    font-size: 30px;
+.links ul li{
+    color: white; 
+    font-size: 15px;
+    display: inline;
 }
 
-/* end of: "contact" div */
-
-#line {
-    width: 1px;
-    height: 500px;
-    background-color: red;
+body {
+    height: 5000px;
 }
