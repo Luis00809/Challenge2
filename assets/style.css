@@ -27,6 +27,11 @@ a:visited {
     color: white;
 }
 
+h2 {
+    color: rgb(173, 232, 244);
+    text-align: center;
+    font-size: 1.75rem;
+}
 
 /* start of: heading section */
 .header {
@@ -79,7 +84,7 @@ a:visited {
 .container {
     display: flex;
     flex-direction: column;
-    height: 4000px;
+    height: 450px;
 }
 
 /* end of: container section */
@@ -103,7 +108,7 @@ a:visited {
 }
 
 .container .square1 p {
-    color: white;
+    color: rgb(202, 240, 248);
     height: 200px;
     max-width: 40%;
     margin: 20px;
@@ -124,7 +129,6 @@ a:visited {
 
 .container .square2 .left{
     width: 40%;
-    text-align: center;
 }
 
 .box {
@@ -134,6 +138,7 @@ a:visited {
     align-items: center;
     gap: 60px;
     max-width: 90%;
+    border-left: 1px double white;
 }
 
 #top {
@@ -146,15 +151,36 @@ a:visited {
     flex: 1 0 0px;
 }
 
-.stack-1 img, .stack-2 img, .stack-3 img{
-    border-radius: 5%;
-}
-
 /* flex for 3 images stacked with one on top */
 .stack-1 img, .stack-2 img, .stack-3 img{
-    /* border: 10px double red; */
     border-radius: 5%;
+    border: 9px double white;
+    /* background-color: white; */
 }
+
+.box img:hover {
+    background-color: red;
+}
+
+.box figcaption {
+    border: 3px solid rgb(3, 4, 94); 
+    position: relative;
+    background-color: rgba(0, 150, 199, 0.5);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+ .box .stack-1 figcaption, .stack-2 figcaption { 
+    bottom: 35px;
+    width: 50%;
+    left: 8px;
+}
+
+
+.box .stack-3 figcaption {
+    bottom: 41px;
+    left: 15px;
+    width: 30%;
+} 
 
 /* end of: row 2 */
 
@@ -162,16 +188,15 @@ a:visited {
 /* start of: row3 */
 .container .square3 {
     display: flex;   
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
+    padding: 50px 0;
 }
 
 .container .square3 .contact {
-    color: white;
     width: 35%;
-    text-align: center;
-
 }
+
 
 .container .square3 .links  {
     width: 65%;
@@ -182,6 +207,7 @@ a:visited {
     justify-content:space-around;
     align-items: center;
     width: 100%;
+    border-left: 1px solid white;
 }
 
 .links ul {
@@ -192,11 +218,30 @@ a:visited {
 }
 
 .links ul li{
-    color: white; 
+    color: 72, 202, 228; 
     font-size: 15px;
     display: inline;
 }
 
+
+@media (min-width: 1000px) and (max-width: 3000px) {
+    .container .square1 p {
+        font-size: 2rem;
+    }
+
+}
+
+@media (min-width: 1000px) and (max-width: 1285px) {
+    .container .square2 {
+        margin-top: 100px;
+    } 
+}
+
+@media (min-width: 586px) and (max-width: 1000px) {
+    .container .square1 p {
+        font-size: 1.2rem;
+    }
+}
 
     
   @media screen and (max-width: 855px) {
@@ -221,6 +266,18 @@ a:visited {
   }
   
   @media screen and (max-width: 788px){
+   
+    .square2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .container .square2 .left {
+        width: 100%;
+        margin-bottom: 20px;
+      }  
+   
     .container .square3 {
         min-height: 270px;
         display: flex;
@@ -253,7 +310,7 @@ a:visited {
   }
   
   @media screen and (max-width: 665px) {
-      .square2 {
+      /* .square2 {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -262,7 +319,7 @@ a:visited {
       .container .square2 .left {
         width: 100%;
         margin-bottom: 20px;
-      }  
+      }   */
   }
   
   @media screen and (max-width: 585px) {
@@ -280,4 +337,5 @@ a:visited {
         min-width: 90%;
         margin: 20px;
     }
+
 }
