@@ -31,6 +31,8 @@ h2 {
     color: rgb(173, 232, 244);
     text-align: center;
     font-size: 1.75rem;
+    margin-right: 40px;
+   
 }
 
 /* start of: heading section */
@@ -84,7 +86,7 @@ h2 {
 .container {
     display: flex;
     flex-direction: column;
-    height: 450px;
+    height: 100%;
 }
 
 /* end of: container section */
@@ -98,7 +100,6 @@ h2 {
     justify-content: space-evenly;
     align-items: center;
     min-height: 500px;
-
 }
 
 .container .square1 img {
@@ -124,11 +125,10 @@ h2 {
     justify-content: space-evenly;
     align-items: center;
     margin-bottom: 70px;
-
 }
 
 .container .square2 .left{
-    width: 40%;
+    width: 20%;
 }
 
 .box {
@@ -137,6 +137,7 @@ h2 {
     justify-content: space-evenly;
     align-items: center;
     gap: 60px;
+    width: 60%;
     max-width: 90%;
     border-left: 1px double white;
 }
@@ -155,7 +156,6 @@ h2 {
 .stack-1 img, .stack-2 img, .stack-3 img{
     border-radius: 5%;
     border: 9px double white;
-    /* background-color: white; */
 }
 
 .box img:hover {
@@ -194,12 +194,12 @@ h2 {
 }
 
 .container .square3 .contact {
-    width: 35%;
+    width: 20%;
 }
 
 
 .container .square3 .links  {
-    width: 65%;
+    width: 60%;
 }
 
 .links {
@@ -214,13 +214,20 @@ h2 {
     list-style: none;
     display: flex;
     justify-content: space-evenly;
-    width: 100%
+    width: 100%;
 }
 
 .links ul li{
-    color: 72, 202, 228; 
-    font-size: 15px;
     display: inline;
+}
+
+.links .mail, .github, .linked {
+    max-width: 30px;
+}
+
+.links .mail {
+    position: relative;
+    top: 7px;
 }
 
 
@@ -266,6 +273,18 @@ h2 {
   }
   
   @media screen and (max-width: 788px){
+
+    h2 {
+        text-align: center;
+        border-bottom: 2px solid white;
+        border-bottom-style: groove;
+        width: 100%;
+    }
+
+    .container .square2 .box, .square3 .links {
+        border-left: none;
+        
+    }
    
     .square2 {
         display: flex;
