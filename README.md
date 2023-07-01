@@ -9,6 +9,7 @@ I wanted to make a portfolio page for myself to showcase my previous work. I als
 ## Usage 
 The created portfolio page can be used by employers that are interested in hiring me. Here,employers can observe my skillset and completed projects. This can also serve as a point of contact as there are listed links to contact me. The page will be used by me in the future as I will continue to update the page as I coninure to complete projects. 
 
+The application can be reached at: https://luis00809.github.io/Challenge2/
 here is a preview of the portfolio page that was created: 
 ![portfolio screenshot](./assets/images/Screen%20Shot%202023-06-25%20at%203.02.17%20PM.png)
 
